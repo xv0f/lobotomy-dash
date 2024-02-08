@@ -74,8 +74,8 @@ lobotomy2.width = 50;
 lobotomy2.alpha = 0.001;
 
 // Spikes
-var spikes = [0, 0, 0].map(function() {
-  var spike = createSprite(0, game.player.start_pos.y);
+var spikes = [0, 0, 0].map(function(_, i) {
+  var spike = createSprite(50 * i, game.player.start_pos.y);
 
   spike.setAnimation("spike");
   spike.alpha = 0;
